@@ -1,4 +1,4 @@
-<img src="https://graph.org/file/f97e69d8f524048e6f908.jpg" alt="logo" target="/blank">
+<div align="center"> <img src="https://graph.org/file/f97e69d8f524048e6f908.jpg" alt="logo" target="/blank"> </div>
 
 <h1 align="center">
  <b><a href="https://telegram.me/RenameSnowProBot" target="/blank"> RenameSnowProBot </a></>
