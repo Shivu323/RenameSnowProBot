@@ -1,4 +1,4 @@
-<img src="https://telegra.ph/file/e01b2016af8ab7b7616dc.png" alt="logo" target="/blank">
+<img src="https://graph.org/file/f97e69d8f524048e6f908.jpg" alt="logo" target="/blank">
 
 <h1 align="center">
  <b><a href="https://telegram.me/RenameSnowProBot" target="/blank"> RenameSnowProBot </a></>
