@@ -1,12 +1,15 @@
 from pyrogram import Client, filters
 from pyrogram.enums import MessageMediaType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply
+from helper.database import db
 
 @Client.on_message(filters.private & filters.reply)
 async def refunc(client, message):
     reply_message = message.reply_to_message
     if (reply_message.reply_markup) and isinstance(reply_message.reply_markup, ForceReply):
-       new_name = message.text 
+       prefix = await db.get_prefix(message.from_user.id)
+       suffix = await db.get_suffix(message.from_user.id)
+       new_name = prefix +  message.text + suffix 
        await message.delete() 
        msg = await client.get_messages(message.chat.id, reply_message.id)
        file = msg.reply_to_message
