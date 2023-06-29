@@ -88,12 +88,12 @@ async def see_suffix(client, message):
 # DELETING PREFIX & SUFFIX ❌
 @Client.on_message(filters.private & filters.command('del_prefix'))
 async def del_prefix(client, message):
-    await db.set_prefix(message.from_user.id, prefix=None)
+    await db.set_prefix(message.from_user.id, prefix="")
     await message.reply_text("𝚈𝙾𝚄𝚁 𝙲𝚄𝚁𝚁𝙴𝙽𝚃 𝙿𝚁𝙴𝙵𝙸𝚇\n\n𝙳𝙴𝙻𝙴𝚃𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈...! ❌️")
 
 
 
 @Client.on_message(filters.private & filters.command('del_suffix'))
 async def del_suffix(client, message):
-    await db.set_suffix(message.from_user.id, suffix=None)
+    await db.set_suffix(message.from_user.id, suffix="")
     await message.reply_text("𝚈𝙾𝚄𝚁 𝙲𝚄𝚁𝚁𝙴𝙽𝚃 𝚂𝚄𝙵𝙵𝙸𝚇\n\n𝙳𝙴𝙻𝙴𝚃𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈...! ❌️")
