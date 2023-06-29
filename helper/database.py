@@ -12,7 +12,10 @@ class Database:
         return dict(
             _id=int(id),                                   
             file_id=None,
-            caption=None
+            caption=None,
+            prefix="",
+            suffix="",
+            
         )
 
     async def add_user(self, id):
@@ -47,6 +50,20 @@ class Database:
     async def get_caption(self, id):
         user = await self.col.find_one({'_id': int(id)})
         return user.get('caption', None)
+    
+    async def set_prefix(self, id, prefix):
+        await self.col.update_one({"_id": int(id)}, {'$set': {"prefix": prefix}})
+    
+    async def get_prefix(self, id):
+        user = await self.col.find_one({'_id': int(id)})
+        return user.get('prefix', None)
+
+    async def set_suffix(self, id, suffix):
+        await self.col.update_one({"_id": int(id)}, {'$set': {"suffix": suffix}})
+    
+    async def get_suffix(self, id):
+        user = await self.col.find_one({'_id': int(id)})
+        return user.get('suffix', None)
 
 
 db = Database(DB_URL, DB_NAME)
