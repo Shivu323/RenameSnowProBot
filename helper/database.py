@@ -13,7 +13,6 @@ class Database:
             _id=int(id),                                   
             file_id=None,
             caption=None,
-            
         )
 
     async def add_user(self, id):
