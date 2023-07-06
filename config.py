@@ -14,7 +14,7 @@ DB_NAME = os.environ.get("DB_NAME","User_Data")
 
 DB_URL = os.environ.get("DB_URL","")
  
-FLOOD = int(os.environ.get("FLOOD", "10"))
+FLOOD = int(os.environ.get("FLOOD", "100"))
 
 START_PIC = os.environ.get("START_PIC", "")
 
