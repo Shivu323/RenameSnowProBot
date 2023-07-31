@@ -14,7 +14,7 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    txt=f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !"
+    txt=f"👋 Hello welcome to BS HEGDE CREATIONS {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !"
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton('📢 Updates', url='https://t.me/BSHEGDE'),
         InlineKeyboardButton('🤝 Support', url='https://t.me/bshegdecreations')
@@ -62,7 +62,7 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=f"""👋 Hello Developer {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
+            text=f"""👋 Hello WELCOME TOBS HEGDECREATIONS{query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
             reply_markup=InlineKeyboardMarkup( [[
         InlineKeyboardButton('📢 Updates', url='https://t.me/BSHEGDE'),
         InlineKeyboardButton('🤝 Support', url='https://t.me/BSHEGDE')
