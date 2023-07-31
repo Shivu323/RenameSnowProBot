@@ -1,6 +1,6 @@
 class mr(object):
     PROGRESS_BAR = """\n
-╭━━━━❰ Snowball Processing... ❱━➣
+╭━━━━❰ BS HEGDE BOT Processing... ❱━➣
 ┣⪼ 🗂️ : {1} | {2}
 ┣⪼ ⏳️ : {0}%
 ┣⪼ 🚀 : {3}/s
@@ -10,12 +10,12 @@ class mr(object):
     ABOUT_TXT = """
 ╭───────────⍟
 ├🤖 The Name is : {}
-├👑 ADMIN-TG : <a href=https://t.me/Snowball_Official>SNOWBALL</a> 
-├👑 Instagram : <a href=https://www.instagram.com/ritesh6_>C-Insta</a> 
-├📕 LIBRARY : <a href=https://github.com/pyrogram>Pyrogram</a>
-├✏️ LANGUAGE : <a href=https://www.python.org>Python 3</a>
-├💾 DATABASE : <a href=https://cloud.mongodb.com>MongoDB</a>
-├🌀 𝙼𝚈 𝚂𝙴𝚁𝚅𝙴𝚁 : <a href=https://dashboard.heroku.com>Heroku</a>               
+├👑 ADMIN-TG : <a href=https://t.me/Shreeshiva323>BS HEGDE</a> 
+├👑 Instagram : <a href=https://t.me/BSHEGDE>C-Insta</a> 
+├📕 LIBRARY : <a href=https://t.me/BSHEGDE>Pyrogram</a>
+├✏️ LANGUAGE : <a href=https://t.me/BSHEGDE>Python</a>
+├💾 DATABASE : <a href=https://t.me/BSHEGDE>MongoDB</a>
+├🌀 𝙼𝚈 𝚂𝙴𝚁𝚅𝙴𝚁 : <a href=https://t.me/BSHEGDE>Heroku</a>               
 ╰───────────────⍟
                                 """
     HELP_TXT = """
