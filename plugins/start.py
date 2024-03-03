@@ -16,8 +16,8 @@ async def start(client, message):
         await db.add_user(user.id)             
     txt=f"👋 Hello welcome to BS HEGDE CREATIONS {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton('📢 Updates', url='https://t.me/BSHEGDE'),
-        InlineKeyboardButton('🤝 Support', url='https://t.me/bshegdecreations')
+        InlineKeyboardButton('📢 Updates', url='https://t.me/BSHEGDE3'),
+        InlineKeyboardButton('🤝 Support', url='https://t.me/BSHEGDE3')
         ],[
         InlineKeyboardButton('⚡️ About', callback_data='about'),
         InlineKeyboardButton('🤕 Help', callback_data='help')
@@ -62,10 +62,10 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=f"""👋 Hello WELCOME TOBS HEGDECREATIONS{query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
+            text=f"""👋 Hello WELCOME TO BS HEGDE CREATIONS{query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
             reply_markup=InlineKeyboardMarkup( [[
-        InlineKeyboardButton('📢 Updates', url='https://t.me/BSHEGDE'),
-        InlineKeyboardButton('🤝 Support', url='https://t.me/BSHEGDE')
+        InlineKeyboardButton('📢 Updates', url='https://t.me/BSHEGDE3'),
+        InlineKeyboardButton('🤝 Support', url='https://t.me/BSHEGDE3')
         ],[
         InlineKeyboardButton('⚡️ About', callback_data='about'),
         InlineKeyboardButton('🤕 Help', callback_data='help')
